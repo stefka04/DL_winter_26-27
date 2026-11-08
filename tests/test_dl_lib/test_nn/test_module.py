@@ -28,8 +28,7 @@
 #         self.assertTrue(torch.equal(actual, expected))
 
 #     def test_when_subclass_overrides_forward_differently_then_call_uses_that_implementation(
-#         self,
-#     ):
+#             self):
 #         # Arrange
 #         module = _NegateModule()
 #         x = torch.tensor([1.0, -2.0, 3.0])
@@ -54,7 +53,8 @@
 #         # Assert
 #         self.assertEqual(actual, expected)
 
-#     def test_when_called_on_a_different_subclass_then_still_returns_empty_list(self):
+#     def test_when_called_on_a_different_subclass_then_still_returns_empty_list(
+#             self):
 #         # Arrange
 #         module = _NegateModule()
 #         expected = []
@@ -123,8 +123,7 @@
 #         self.assertTrue(actual)
 
 #     def test_when_one_module_is_set_to_eval_then_another_instance_still_defaults_to_true(
-#         self,
-#     ):
+#             self):
 #         # Arrange
 #         first = _DoubleModule()
 #         second = _DoubleModule()
